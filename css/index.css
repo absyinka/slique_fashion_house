@@ -38,6 +38,13 @@ header {
   top: 0;
   z-index: 1000;
 }
+.logo a {
+  text-decoration: none;      /* removes underline */
+  color: var(--gold);         /* uses your gold color */
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 .logo {
   font-family: 'Cinzel', serif;
   font-size: 1.4em;
@@ -59,6 +66,7 @@ nav ul li a {
   padding: 8px 12px;
   border-radius: 6px;
   transition: all 0.3s ease;
+  color: #a38f4f;
 }
 
 nav ul li a:hover {
@@ -109,7 +117,68 @@ nav ul li.dropdown .dropdown-content li a {
 nav ul li.dropdown .dropdown-content li a:hover {
   background-color: rgba(212, 175, 55, 0.15);
 }
+.events {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #252524
+}
 
+.events h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.events p {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* Event List Grid */
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual Event Card */
+.event-card {
+  background: #EDD094;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 20px;
+}
+
+.event-info h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.date-location {
+  font-size: 0.95rem;
+  color: #555;
+}
 /* Show dropdown on hover */
 nav ul li.dropdown:hover .dropdown-content {
   display: block;
@@ -132,13 +201,17 @@ nav ul li.dropdown:hover .dropdown-content {
 }
 
 .events-link {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0; /* top margin, auto sides to center */
   padding: 14px 30px;
   border: 1px solid #d4af37;
   border-radius: 30px;
   font-weight: bold;
   background-color: transparent;
   transition: all 0.4s ease;
+  text-align: center;
+  position: relative;
 }
 
 .events-link:hover {
@@ -146,20 +219,89 @@ nav ul li.dropdown:hover .dropdown-content {
   color: #0d0d0d;
   box-shadow: 0 0 10px rgba(212, 175, 55, 0.6);
 }
+/*Showcase styles*/
+/* Container for the whole showcase section */
+.Showcase {
+  padding: 60px 20px;
+  background-color: #0e0d0d;
+}
 
+/* Grid layout (showcase)*/
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive */
+  gap: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Each image card (showcase)*/
+.showcase-card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect(showcase) */
+.showcase-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling (showcase)*/
+.showcase-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 3 / 4; 
+}
+
+/*(showcase)*/
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
 /* Collections Section */
-.collections {
+ .collections {
   padding: 80px 60px;
   background-color: #111;
 }
+/*now this is for the collections button that leads to the collections page*/
+.collections-button-wrapper {
+  text-align: center;
+  margin-top: 0px;
+    text-align: center;
 
+}
+
+.collections-button {
+  display: inline-block;
+  padding: 14px 10px;
+  border: 2px solid #d4af37;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.collections-button:hover {
+  background-color: #d4af37;
+  color: #fff;
+}
+
+/*
 .collections h2 {
   text-align: center;
   font-family: 'Cinzel', serif;
   font-size: 2.5em;
   color: #d4af37;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   text-shadow: 0 0 6px rgba(212, 175, 55, 0.3);
+  font-size: 2.0em;
 }
 
 .collection-grid {
@@ -206,7 +348,7 @@ nav ul li.dropdown:hover .dropdown-content {
   font-family: 'Cinzel', serif;
   font-size: 1.3em;
   margin-top: 10px;
-}
+} */
 
 /* Footer */
 footer {
@@ -216,23 +358,4 @@ footer {
   padding: 60px;
   border-top: 1px solid rgba(212, 175, 55, 0.1);
   flex-wrap: wrap;
-}
-
-.footer-section {
-  max-width: 400px;
-  margin: 20px;
-}
-
-.footer-section h3 {
-  font-family: 'Cinzel', serif;
-  margin-bottom: 15px;
-  font-size: 1.5em;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-  padding-bottom: 5px;
-}
-
-.footer-section p {
-  color: #d4af37cc;
-  margin: 8px 0;
-  font-size: 0.95em;
 }
