@@ -147,9 +147,9 @@ nav ul li.dropdown .dropdown-content li a:hover {
 
 /* Individual Event Card */
 .event-card {
-  background: #EDD094;
+  background: #C99F1C;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px #FFD700;
   overflow: hidden;
   max-width: 320px;
   transition: transform 0.3s ease;
@@ -171,13 +171,13 @@ nav ul li.dropdown .dropdown-content li a:hover {
 
 .event-info h3 {
   font-size: 1.3rem;
-  color: #222;
+  color: #F5F5F5;
   margin-bottom: 10px;
 }
 
 .date-location {
   font-size: 0.95rem;
-  color: #555;
+  color: #353434;
 }
 /* Show dropdown on hover */
 nav ul li.dropdown:hover .dropdown-content {
@@ -198,6 +198,8 @@ nav ul li.dropdown:hover .dropdown-content {
   object-fit: cover;
   display: block;
   border-radius: 10px;
+  object-fit: cover;
+    object-position: center center; /* adjust if needed */
 }
 
 .events-link {
@@ -205,7 +207,7 @@ nav ul li.dropdown:hover .dropdown-content {
   width: fit-content;
   margin: 40px auto 0; /* top margin, auto sides to center */
   padding: 14px 30px;
-  border: 1px solid #d4af37;
+  border: 1px solid #0D0D0D;
   border-radius: 30px;
   font-weight: bold;
   background-color: transparent;
