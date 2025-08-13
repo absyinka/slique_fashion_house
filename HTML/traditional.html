@@ -1,112 +1,80 @@
-<!-- This is the traditional page html code -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traditional Collection | Silque Fashion House</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
-    <style>
-        /* Extra styles for gallery spacing */
-        .traditional-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-        }
-        .traditional-item {
-            text-align: center;
-        }
-        .traditional-item img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border: 2px solid var(--gold);
-            border-radius: 8px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .traditional-item img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 0 15px var(--gold);
-        }
-        .traditional-item p {
-            margin-top: 0.5rem;
-            font-family: var(--font-heading);
-            color: var(--gold);
-            font-size: 1.1rem;
-        }
-        .back-link {
-            display: inline-block;
-            margin: 2rem;
-            color: var(--gold);
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .back-link:hover {
-            color: var(--white);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Traditional Collection | Silque Fashion House</title>
+  <link rel="stylesheet" href="../CSS/traditional.css" />
 </head>
 <body>
 
-    <header>
-        <h1>Silque Fashion House</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="traditional.html">Traditional</a></li>
-                <li><a href="corporate.html">Corporate</a></li>
-                <li><a href="casual.html">Casual</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header placeholder (loaded by layout.js) -->
+  <div id="header-placeholder"></div>
 
-    <section class="intro">
-        <h2>Traditional Collection</h2>
-        <p>Graceful and modest pieces inspired by heritage, designed to make you feel elegant and comfortable in every setting.</p>
-    </section>
+  <!-- ===== Intro Section ===== -->
+  <section class="intro">
+    <h2>⭐⭐Traditional Collection ⭐⭐</h2>
+    <p>Welcome to Silque Fashion House's Traditional Collection 😊😊😊<br/>
+      Graceful and modest pieces inspired by heritage, designed to make you feel elegant and comfortable in every setting.</p>
+  </section>
 
-    <section class="traditional-gallery">
-        <div class="traditional-item">
-            <img src="traditional1.jpeg" alt="Traditional Outfit 1">
-            <p>Traditional 1</p>
-        </div>
-        <div class="traditional-item">
-            <img src="traditional2.jpeg" alt="Traditional Outfit 2">
-            <p>Traditional 2</p>
-        </div>
-        <div class="traditional-item">
-            <img src="traditional3.jpeg" alt="Traditional Outfit 3">
-            <p>Traditional 3</p>
-        </div>
-        <div class="traditional-item">
-            <img src="traditional4.jpeg" alt="Traditional Outfit 4">
-            <p>Traditional 4</p>
-        </div>
-        <div class="traditional-item">
-            <img src="traditional5.jpeg" alt="Traditional Outfit 5">
-            <p>Traditional 5</p>
-        </div>
-        <div class="traditional-item">
-            <img src="traditional6.jpeg" alt="Traditional Outfit 6">
-            <p>Traditional 6</p>
-        </div>
-        <div class="traditional-item">
-            <img src="traditional7.jpeg" alt="Traditional Outfit 7">
-            <p>Traditional 7</p>
-        </div>
-        <div class="traditional-item">
-            <img src="traditional8.jpeg" alt="Traditional Outfit 8">
-            <p>Traditional 8</p>
-        </div>
-    </section>
+  <!-- ===== Traditional Gallery ===== -->
+  <section class="traditional-gallery">
+    <!-- Item 1 -->
+    <div class="traditional-item">
+      <img src="../images/traditional/traditional1.jpeg" alt="Traditional Outfit 1">
+      <p>Male Iru and Buba</p>
+    </div>
+    <!-- Item 2 -->
+    <div class="traditional-item">
+      <img src="../images/traditional/traditional2.jpeg" alt="Traditional Outfit 2">
+      <p>Couple's aso ebi</p>
+    </div>
+    <!-- Item 3 -->
+    <div class="traditional-item">
+      <img src="../images/traditional/traditional3.jpeg" alt="Traditional Outfit 3">
+      <p>Black/ Gold bottle dress</p>
+    </div>
+    <!-- Item 4 -->
+    <div class="traditional-item">
+      <img src="../images/traditional/traditional4.jpeg" alt="Traditional Outfit 4">
+      <p>Yoruba Aso ebi</p>
+    </div>
+       <div class="traditional-item">
+      <img src="../images/traditional/traditional5.jpeg" alt="Traditional Outfit 1">
+      <p>GOld bottle dress</p>
+    </div>
+    <!-- Item 5 -->
+    <div class="traditional-item">
+      <img src="../images/traditional/traditional6.jpeg" alt="Traditional Outfit 2">
+      <p>Peach Dress</p>
+    </div>
+    <!-- Item 6 -->
+    <div class="traditional-item">
+      <img src="../images/traditional/traditional7.jpeg" alt="Traditional Outfit 3">
+      <p>Gold/peach dress</p>
+    </div>
+    <!-- Item 6 -->
+    <div class="traditional-item">
+      <img src="../images/traditional/traditional8.jpeg" alt="Traditional Outfit 4">
+      <p>Male swale clothe</p>
+    </div>
+    <!-- Add more items as needed -->
+  </section>
 
-    <a href="traditional_corporate_casual.html" class="back-link">&larr; Back to Collections</a>
-
-    <footer>
-        <p>&copy; 2025 Silque Fashion House</p>
-    </footer>
-
+  <!-- ===== Back Link ===== -->
+  <a href="index.html" class="back-link">&larr; Back to Home</a>
+ <!-- Link to Collections page -->
+  <div class="back-to-collection">
+            <a href="collection.html" class="arrow-link">← Explore More Looks</a>
+          </div>
+<div class="fashio-tips">
+                    <h3>🧥 Style Tips</h3>
+                    <p>Wear different clothes, suits, dresses, all with a gold and black theme and watch your style elevate</p>
+                </div>
+  <!-- Footer placeholder (loaded by layout.js) -->
+  <div id="footer-placeholder"></div>
+<script type="module" src="../JS/layout.js"></script>
+  <script type="module" src="../JS/layout.js"></script>
 </body>
 </html>
