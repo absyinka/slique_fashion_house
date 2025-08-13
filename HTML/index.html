@@ -1,30 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Silque Fashion House</title>
   <link rel="stylesheet" href="../CSS/home_page.css " />
 </head>
+
 <body>
 
   <!-- Header will be inserted here by layout.js -->
   <div id="header-placeholder"></div>
 
-  <!-- ===== Hero Section ===== -->
+  <!--  Hero Section of the page -->
   <section class="hero">
     <div class="hero-image">
       <img src="../images/home_page_banner.jpg" alt="Silque Banner Image" />
     </div>
-    <a href="#" class="events-link">Explore Our Events</a>
   </section>
+  <section class="events">
+    <h2><a href="events.html">Upcoming Events</a></h2>
+    <p>Join us for our exclusive fashion events and showcases.</p>
+    <!--This is where i coded the Events part of the home page-->
+    <div class="event-list">
+      <!-- First Event -->
+      <div class="event-card">
+        <img src="../images/fashion_show1.jpeg" alt="Fashion Show 1" />
+        <div class="event-info">
+          <h3>Gold Hall Extravaganza Fashion Week</h3></br>
+          <h> Come see the elegance of Gold colours</h>
+          <p class="date-location">Sept 15, 2025 | New York, NY</p>
+        </div>
+      </div>
+      <!-- Event 2 -->
+      <div class="event-card">
+        <img src="../images/fashion_show2.jpeg" alt="Fashion Show 2" />
+        <div class="event-info">
+          <h3>Black in-door Style Showcase</h3></br>
+          <h> Experience the sophistication of Black fashion</h>
+          <p class="date-location">Oct 3, 2025 | Los Angeles, CA</p>
+        </div>
+      </div>
 
-  <!-- ===== Collections Section ===== -->
-  <section class="collections">
-    <h2>Our Collections</h2>
-    <div class="collection-grid">
+      <!-- Event 3 -->
+      <div class="event-card">
+        <img src="../images/fashion_show3.jpeg" alt="Fashion Show 3" />
+        <div class="event-info">
+          <h3>Paris Black Les vêtements Preview</h3> </br>
+          <h>This is where we see clothing at it's peak</h>
+          <p class="date-location">Nov 21, 2025 | Chicago, IL</p>
+        </div>
+      </div>
+    </div>
+    <h> <a href="events.html" class="events-link">Explore Our Events</a></h>
+  </section>
+  <!--Showcase a gallery of photos (gotten from hannat)-->
+  <section class="Showcase">
+    <div class="showcase-grid">
+      <div class="showcase-card"> <img src="../images/Casual/casual1.jpeg" alt="Casua1l"> </div>
+      <div class="showcase-card"> <img src="../images/Casual/casual2.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Casual/casual3.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Casual/casual4.jpeg" alt="casual4"> </div>
+      <div class="showcase-card"> <img src="../images/Casual/casual5.jpeg" alt="casual5"> </div>
+      <div class="showcase-card"> <img src="../images/Casual/casual6.jpeg" alt="casual6"> </div>
+      <div class="showcase-card"> <img src="../images/Traditional/traditional1.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Traditional/traditional2.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Traditional/traditional3.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Traditional/traditional4.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Traditional/traditional5.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Traditional/traditional6.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Traditional/traditional7.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Formal/formal1.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Formal/formal2.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Formal/formal3.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Formal/formal4.jpeg"> </div>
+      <div class="showcase-card"> <img src="../images/Formal/formal5.jpeg"> </div>
+    </section>
+  <section>
+    <div class="collections-button-wrapper"></div>
+    <a href="collections.html" class="collections-button">View All Collections</a>
+    </div>
+  </section>
+  <!-- Collections Section -->
+  <!-- <section class="collections">
+    <h2><a href="collections.html">Our Collections</a></h2>
+    <div class="collection-grid"> -->
 
-      <!-- Traditional -->
+  <!--Traditional
       <div class="collection-card">
         <div class="img">
           <a href="traditional.html">
@@ -32,9 +95,9 @@
           </a>
         </div>
         <h3>Traditional</h3>
-      </div>
+      </div> 
 
-      <!-- Formal -->
+      Formal 
       <div class="collection-card">
         <div class="img">
           <a href="formal.html">
@@ -44,8 +107,8 @@
         <h3>Formal</h3>
       </div>
 
-      <!-- Casual -->
-       <div class="collection-card">
+      Casual
+      <div class="collection-card">
         <div class="img">
           <a href="casual.html">
             <img src="../images/casual/casual3.jpeg" alt="Casual Wear" />
@@ -53,7 +116,7 @@
         </div>
         <h3>Casual</h3>
       </div>
-  </section>
+  </section> -->
 
   <!-- Footer will be inserted here by layout.js -->
   <div id="footer-placeholder"></div>
@@ -61,4 +124,5 @@
   <!-- JS: Load header & footer via modules -->
   <script type="module" src="../JS/layout.js"></script>
 </body>
+
 </html>
