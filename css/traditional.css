@@ -1,0 +1,87 @@
+/* Traditional collection gallery styles */
+
+.traditional-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.traditional-item {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.06));
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.traditional-item img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.traditional-item p {
+    margin: 12px 16px 0;
+    color: var(--gold);
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
+.traditional-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Intro section tweaks */
+.intro {
+    /* match collections intro: full-width light-gold band with generous vertical padding */
+    padding: 48px 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: var(--gold);
+}
+
+.intro p {
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Back link and helpers */
+.back-link, .arrow-link {
+    display: inline-block;
+    margin: 28px 12px;
+    color: var(--gold);
+}
+
+.fashio-tips {
+    max-width: 900px;
+    margin: 28px auto 80px;
+    padding: 18px 22px;
+    background: rgba(212, 175, 55, 0.03);
+    border-radius: 8px;
+    color: #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .traditional-item img {
+        height: 220px;
+    }
+
+    .traditional-item p {
+        font-size: 0.95rem;
+    }
+}

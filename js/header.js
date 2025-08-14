@@ -5,6 +5,7 @@ export const headerHTML = `
   </div>
   <nav>
     <ul>
+      <li><a href="about.html">About Us</a></li>
       <li class="dropdown">
         <a href="collections.html" class="dropbtn">Collections ▾</a>
         <ul class="dropdown-content">
@@ -13,9 +14,8 @@ export const headerHTML = `
           <li><a href="traditional.html">Traditional</a></li>
         </ul>
       </li>
-      <li><a href="board_of_trustees.html">Board of Trustees</a></li>
-      <li><a href="about_us.html">About Us</a></li>
-      <li><a href="contact_us.html">Contact</a></li>
+      <li><a href="board.html">Board of Trustees</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>

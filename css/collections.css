@@ -1,236 +1,79 @@
+@import url('shared.css');
+
+/* Page-specific tokens moved to css/shared.css to avoid duplication */
+
+/* Page-specific styles for collections page (uplifted) */
+.page-intro, .intro,
 #collection {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-#collection h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-#collection p {
-    font-size: 1.1em;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-.collection-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    margin-top: 0px;
-}
-
-
-.collection-gallery img {
-    width: 300px;
-    height: 500px;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-/* Hover effect */
-.collection-gallery img:hover {
-    transform: scale(1.05);
-}
-.intro {
-  background-color: #fffaf0; 
   text-align: center;
-  padding: 60px 20px;
-  color: #333;
-  border-bottom: 1px solid #eee;
+  padding: 48px 20px;
 }
 
-.intro h2 {
+/* colors and background for .page-intro/.intro are provided by css/shared.css */
+
+.page-intro h1, .page-intro h2,
+.intro h1, .intro h2 {
   font-size: 2.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-weight: 700;
-  color: #d4af37; 
+  color: var(--gold);
 }
 
+.page-intro p,
 .intro p {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 1.05rem;
+  color: #333;
   line-height: 1.6;
 }
 
-
-
-/* Footer */
-footer {
-  display: flex;
-  justify-content: space-between;
-  background: #0d0d0d;
-  padding: 60px;
-  border-top: 1px solid rgba(212, 175, 55, 0.1);
-  flex-wrap: wrap;
+/* Gallery layout (grid) */
+.collection-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  max-width: 1300px;
+  margin: 32px auto 40px;
+  padding: 0 20px;
+  align-items: start;
 }
 
-.footer-section {
-  max-width: 400px;
-  margin: 20px;
+/* Card-like image tiles */
+.collection-item {
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.06));
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  border: 2px solid transparent;
 }
 
-.footer-section h3 {
-  font-family: 'Cinzel', serif;
-  margin-bottom: 15px;
-  font-size: 1.5em;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-  padding-bottom: 5px;
+.collection-item img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
 }
 
-.footer-section p {
-  color: #d4af37cc;
-  margin: 8px 0;
-  font-size: 0.95em;
-}
-/* footer_copy this down */
-.footer-section {
-  max-width: 400px;
-  margin: 20px;
-}
-
-.footer-section h3 {
-  font-family: 'Cinzel', serif;
-  margin-bottom: 15px;
-  font-size: 1.5em;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-  padding-bottom: 5px;
-}
-
-.footer-section p {
-  color: #d4af37cc;
-  margin: 8px 0;
-  font-size: 0.95em;
-}
-/*footer_stop here*/
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 60px;
-  background: linear-gradient(to right, #0a0a0a, #111111); /* ← Replace this */
-  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.logo a {
-  text-decoration: none;      
-  color: var(--gold);         
-  font-family: 'Cinzel', serif;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-.logo {
-  font-family: 'Cinzel', serif;
-  font-size: 1.4em;
+.collection-item .caption {
+  padding: 14px 16px;
   font-weight: 700;
-  color: #d4af37;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
-}
-.logo:hover {
-  background-color: rgba(212, 175, 55, 0.1);
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 40px;
-}
-
-nav ul li a {
-  font-weight: 500;
-  font-size: 1.1em;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  color: #a38f4f;
-}
-
-nav ul li a:hover {
-  background-color: rgba(212, 175, 55, 0.1);
-}
-/* Dropdown container positioning */
-nav ul li.dropdown {
-  position: relative;
-}
-
-/* Dropdown toggle link */
-nav ul li.dropdown > a.dropbtn {
-  cursor: pointer;
-  user-select: none;
-  display: inline-block;
-  padding-right: 10px; /* for the arrow spacing */
-}
-
-/* Dropdown menu - hidden by default */
-nav ul li.dropdown .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%; /* places the dropdown right below the parent */
-  left: 0;
-  background-color: #121212;  /* dark background */
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(212, 175, 55, 0.3);
-  border-radius: 6px;
-  margin-top: 8px;
-  padding: 0;
-  z-index: 1000;
-}
-
-/* Dropdown items */
-nav ul li.dropdown .dropdown-content li {
-  list-style: none;
-}
-
-nav ul li.dropdown .dropdown-content li a {
-  color: #d4af37;
-  padding: 12px 16px;
-  display: block;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li.dropdown .dropdown-content li a:hover {
-  background-color: rgba(212, 175, 55, 0.15);
-}
-
-/* Show dropdown on hover */
-nav ul li.dropdown:hover .dropdown-content {
-  display: block;
-}
-.back-link {
-  display: inline-block;
-  margin: 2rem;
   color: var(--gold);
-  text-decoration: none;
-  font-weight: bold;
-  font-family: var(--font-heading);
-}
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Open+Sans&display=swap');
-
-/* Font family variables for easy use */
-:root {
-  --font-heading: 'Cinzel', serif;
-  --font-body: 'Open Sans', sans-serif;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.03));
 }
 
-/* Apply fonts globally */
-body {
-  font-family: var(--font-body);
+.collection-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.6), 0 0 20px var(--gold-accents);
+  border-color: var(--gold-accents);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-}
+/* small screens */
+@media (max-width: 640px) {
+  .collection-item img {
+    height: 260px;
+  }
 
-/*header stops here*/
+  .collection-item .caption {
+    font-size: 0.95rem;
+  }
+}

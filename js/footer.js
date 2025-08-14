@@ -1,7 +1,7 @@
 export const footerHTML = `
 <footer>
   <div class="footer-section about">
-    <a href="about_us.html">About us</a> 
+    <a href="about.html">About us</a> 
     <p>Silque Fashion House represents elegance, tradition, and innovation in fashion. We deliver unique styles to make bold statements.</p>
   </div>
   <div class="footer-section contact">

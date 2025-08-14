@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Open+Sans&display=swap');
+
+/* Design tokens / variables */
+:root {
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Open Sans', sans-serif;
+    --gold: #d4af37;
+    /* light gold used for intro/page background across collection pages */
+    --light-gold: #fbf1d6;
+    --gold-accents: rgba(212, 175, 55, 0.14);
+    --bg-dark: #0d0d0d;
+    --muted: #a38f4f;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base / Global */
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-dark);
+    color: var(--gold);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Ensure all headings use the shared heading font for consistency */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
+a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    display: block;
+    max-width: 100%;
+}
+
+/* Header / Nav (shared) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background: linear-gradient(to right, #0a0a0a, #111111);
+    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--gold);
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.logo:hover {
+    background-color: rgba(212, 175, 55, 0.06);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+/* Ensure regular nav links and the dropdown toggle share identical sizing and alignment */
+nav ul li a,
+nav ul li.dropdown>a.dropbtn {
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    color: var(--muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+nav ul li a:hover,
+nav ul li.dropdown>a.dropbtn:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+}
+
+/* Dropdown helper styles */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li.dropdown>a.dropbtn {
+    cursor: pointer;
+    user-select: none;
+}
+
+nav ul li.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #121212;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.3);
+    border-radius: 6px;
+    margin-top: 8px;
+    padding: 0;
+    z-index: 1000;
+}
+
+nav ul li.dropdown .dropdown-content li {
+    list-style: none;
+}
+
+nav ul li.dropdown .dropdown-content li a {
+    color: var(--gold);
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li.dropdown .dropdown-content li a:hover {
+    background-color: rgba(212, 175, 55, 0.15);
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Footer (shared) */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: var(--bg-dark);
+    padding: 60px;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    max-width: 400px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    color: #d4af37cc;
+    margin: 8px 0;
+    font-size: 0.95em;
+}
+
+/* Utility / shared helpers */
+.back-link {
+    display: inline-block;
+    margin: 2rem;
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-heading);
+}
+
+/* Shared intro background for collection pages to ensure a consistent light-gold palette */
+.page-intro,
+.intro {
+    background-color: var(--light-gold);
+    color: #1a1a1a;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+}
