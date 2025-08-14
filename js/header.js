@@ -9,9 +9,9 @@ export const headerHTML = `
       <li class="dropdown">
         <a href="collections.html" class="dropbtn">Collections ▾</a>
         <ul class="dropdown-content">
-          <li><a href="corporate.html">Corporate</a></li>
-          <li><a href="formal.html">Formal</a></li>
           <li><a href="traditional.html">Traditional</a></li>
+          <li><a href="casual.html">Casual</a></li>
+          <li><a href="formal.html">Formal</a></li>
         </ul>
       </li>
       <li><a href="board.html">Board of Trustees</a></li>

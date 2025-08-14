@@ -28,6 +28,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.text-dark{
+    color: var(--bg-dark);
+}
+
 /* Ensure all headings use the shared heading font for consistency */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
