@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Silque Fashion House - Contact Us</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Slique Fashion House</title>
     <link rel="stylesheet" href="css/shared.css" />
-    <link rel="stylesheet" href="css/index.css" />
-</head>
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <form class="contact-form">
+          <h1 class="form-heading">Contact Us</h1>
+          <div class="input-groups">
+            <div class="input-group">
+              <label for="name" class="field-label">Name</label>
+              <input type="text" class="field" placeholder="Enter Your Name" />
+            </div>
+            <div class="input-group">
+              <label for="email" class="field-label">Email</label>
+              <input
+                type="email"
+                class="field"
+                placeholder="Enter Your Email Address"
+              />
+            </div>
+          </div>
+          <div class="textarea-group">
+            <label for="message" class="field-label">Message</label>
+            <textarea
+              class="field"
+              placeholder="Your Message here..."
+            ></textarea>
+          </div>
+          <button type="button" class="submit-btn">
+            <span>Submit</span>
+          </button>
+          <p>
+            For any question contact our 24/7 call center:
+            <span>+123 456 7890</span>
+          </p>
+        </form>
+      </div>
+    </div>
 
-<body>
-    <div id="header-placeholder"></div>
-
-    <div id="footer-placeholder"></div>
-
-    <script type="module" src="js/layout.js"></script>
-</body>
-
+    <script src="./js/contact.js"></script>
+  </body>
 </html>
