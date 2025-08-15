@@ -97,7 +97,7 @@ nav ul li.dropdown:hover .dropdown-content {
   border: 1px solid #0D0D0D;
   border-radius: 30px;
   font-weight: bold;
-  background-color: transparent;
+  background-color: #353434;
   transition: all 0.4s ease;
   text-align: center;
   position: relative;

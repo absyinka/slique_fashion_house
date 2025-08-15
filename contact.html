@@ -4,17 +4,102 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Silque Fashion House - Contact Us</title>
+    <title>Contact Us | Silque Fashion House</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="css/shared.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 </head>
 
 <body>
     <div id="header-placeholder"></div>
 
+    <main>
+        <section class="page-intro intro">
+            <h1>Contact Us</h1>
+            <p>Questions, bespoke requests, or collaborations — we'd love to hear from you.</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-grid">
+                <div>
+                    <form class="contact-form" id="contactForm">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" required>
+
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" required>
+
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <aside class="contact-info">
+                    <h3>Visit or write to us</h3>
+                    <p>Slique Fashion House<br>12 Elegance Street<br>Lagos, NG</p>
+
+                    <h3>Phone</h3>
+                    <p>+234 800 123 4567</p>
+
+                    <h3>Email</h3>
+                    <p>hello@slique.com</p>
+
+                    <h3>Opening hours</h3>
+                    <p>Mon - Fri: 9am - 6pm<br>Sat: 10am - 4pm</p>
+
+                    <div class="map-placeholder" aria-hidden="false">
+                        <iframe class="map-embed" title="Map of Lagos, Nigeria"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=3.25%2C6.45%2C3.5%2C6.6&amp;layer=mapnik&amp;marker=6.5244%2C3.3792"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div style="text-align:center;margin-top:8px;font-size:0.95rem;color:#ddd;">
+                            <a href="https://www.openstreetmap.org/?mlat=6.5244&amp;mlon=3.3792#map=12/6.5244/3.3792"
+                                target="_blank" rel="noopener" style="color:var(--gold);">View larger map on
+                                OpenStreetMap</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links" aria-label="Follow us">
+                        <a class="social-icon" href="https://www.instagram.com/" target="_blank" rel="noopener"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+
+                        <a class="social-icon" href="https://www.facebook.com/" target="_blank" rel="noopener"
+                            aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+
+                        <a class="social-icon" href="https://twitter.com/" target="_blank" rel="noopener"
+                            aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
     <div id="footer-placeholder"></div>
 
     <script type="module" src="js/layout.js"></script>
+
+    <script>
+        // small client-side example to prevent actual send and show a thank you
+        document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thanks — your message was received. We will reply soon.');
+            this.reset();
+        });
+    </script>
+
 </body>
 
 </html>

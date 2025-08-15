@@ -28,7 +28,7 @@ body {
     scroll-behavior: smooth;
 }
 
-.text-dark{
+.text-dark {
     color: var(--bg-dark);
 }
 
@@ -205,4 +205,55 @@ footer {
     background-color: var(--light-gold);
     color: #1a1a1a;
     border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+}
+
+/* Default intro spacing and typography so every page's intro band matches */
+.page-intro,
+.intro {
+    padding: 48px 20px;
+    text-align: center;
+}
+
+.page-intro h1,
+.intro h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: var(--gold);
+}
+
+.page-intro p,
+.intro p {
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+
+    .page-intro h1,
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* High-specificity rules to ensure pages that use both classes render identically */
+section.page-intro.intro {
+    padding: 48px 20px;
+    text-align: center;
+}
+
+section.page-intro.intro h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: var(--gold);
+}
+
+section.page-intro.intro p {
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.6;
 }
