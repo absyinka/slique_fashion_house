@@ -120,7 +120,7 @@ SOFTWARE.
 
 ## Contributors
 
-List of contributors (fill with GitHub usernames as needed):
+List of contributors:
 
 - @absyinka
 - @alhasoosoo
