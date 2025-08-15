@@ -49,7 +49,7 @@
 
 .collection-item img {
   width: 100%;
-  height: 420px;
+  height: 360px;
   object-fit: cover;
   display: block;
 }
@@ -70,7 +70,15 @@
 /* small screens */
 @media (max-width: 640px) {
   .collection-item img {
-    height: 260px;
+    height: 220px;
+  }
+
+
+  @media (max-width: 860px) {
+    .collection-gallery {
+      grid-template-columns: 1fr;
+      padding: 0 12px;
+    }
   }
 
   .collection-item .caption {

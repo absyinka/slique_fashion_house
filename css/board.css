@@ -63,3 +63,9 @@
         aspect-ratio: 2.4 / 3;
     }
 }
+
+@media (max-width: 860px) {
+    .board-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
