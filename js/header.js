@@ -1,7 +1,7 @@
 export const headerHTML = `
 <header>
   <div class="logo">
-    <a href="index.html">Silque Fashion House</a>
+    <a href="/">Silque Fashion House</a>
   </div>
   <button id="nav-toggle" class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="hamburger"></span>
