@@ -24,7 +24,18 @@ Directories
   - `footer.js` — exported footer HTML string
   - `nav.js` — nav helper: toggler, dropdowns and accessibility helpers
 - `images/` — site images and assets
-- `HTML/` — additional HTML pages (e.g., `traditional.html`)
+- `root files` —  
+    - `index.html`, 
+    - `about.html`, 
+    - `collections.html`, 
+        - `traditional.html`, 
+        - `formal.html`, 
+        - `casual.html`, 
+    - `board.html`, 
+    - `contact.html`, 
+- `markdown files` 
+    - `README.md`, 
+    - `CONTRIBUTING.md` 
 
 ## Development / Quick start
 
